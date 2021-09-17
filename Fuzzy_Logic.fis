@@ -1,0 +1,169 @@
+[System]
+Name='Course_fuzzy'
+Type='mamdani'
+Version=2.0
+NumInputs=8
+NumOutputs=5
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='mom'
+
+[Input1]
+Name='Algorithm_and_Data_Structures'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input2]
+Name='Mathematics'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input3]
+Name='Computer_Networking'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input4]
+Name='Hardware_Programming'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input5]
+Name='PCB_design'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input6]
+Name='Programming_Languages'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input7]
+Name='Network_security'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Input8]
+Name='Database_Designing'
+Range=[0 100]
+NumMFs=5
+MF1='Level1':'gaussmf',[18 -2.22e-16]
+MF2='Level2':'gaussmf',[18 25]
+MF3='Level3':'gaussmf',[18 50]
+MF4='Level4':'gaussmf',[18 75]
+MF5='Level5':'gaussmf',[18 100]
+
+[Output1]
+Name='Cryptography'
+Range=[0 100]
+NumMFs=5
+MF1='Recommend1':'gaussmf',[18 -2.22e-16]
+MF2='Recommend2':'gaussmf',[18 25]
+MF3='Recommend3':'gaussmf',[18 50]
+MF4='Recommend4':'gaussmf',[18 75]
+MF5='Recommend5':'gaussmf',[18 100]
+
+[Output2]
+Name='Embedded_system'
+Range=[0 100]
+NumMFs=5
+MF1='Recommend1':'gaussmf',[18 -2.22e-16]
+MF2='Recommend2':'gaussmf',[18 25]
+MF3='Recommend3':'gaussmf',[18 50]
+MF4='Recommend4':'gaussmf',[18 75]
+MF5='Recommend5':'gaussmf',[18 100]
+
+[Output3]
+Name='Cloud_computing'
+Range=[0 100]
+NumMFs=5
+MF1='Recommend1':'gaussmf',[18 -2.22e-16]
+MF2='Recommend2':'gaussmf',[18 25]
+MF3='Recommend3':'gaussmf',[18 50]
+MF4='Recommend4':'gaussmf',[18 75]
+MF5='Recommend5':'gaussmf',[18 100]
+
+[Output4]
+Name='Machine_learning'
+Range=[0 100]
+NumMFs=5
+MF1='Recommend1':'gaussmf',[18 -2.22e-16]
+MF2='Recommend2':'gaussmf',[18 25]
+MF3='Recommend3':'gaussmf',[18 50]
+MF4='Recommend4':'gaussmf',[18 75]
+MF5='Recommend5':'gaussmf',[18 100]
+
+[Output5]
+Name='IoT'
+Range=[0 100]
+NumMFs=5
+MF1='Recommend1':'gaussmf',[18 -2.22e-16]
+MF2='Recommend2':'gaussmf',[18 25]
+MF3='Recommend3':'gaussmf',[18 50]
+MF4='Recommend4':'gaussmf',[18 75]
+MF5='Recommend5':'gaussmf',[18 100]
+
+[Rules]
+1 1 0 0 0 0 1 0, 1 0 0 0 0 (1) : 1
+2 2 0 0 0 0 2 0, 2 0 0 0 0 (1) : 1
+3 3 0 0 0 0 3 0, 3 0 0 0 0 (1) : 1
+4 4 0 0 0 0 4 0, 4 0 0 0 0 (1) : 1
+5 5 0 0 0 0 5 0, 5 0 0 0 0 (1) : 1
+0 0 0 1 1 0 0 0, 0 1 0 0 0 (1) : 1
+0 0 0 2 2 0 0 0, 0 2 0 0 0 (1) : 1
+0 0 0 3 3 0 0 0, 0 3 0 0 0 (1) : 1
+0 0 0 4 4 0 0 0, 0 4 0 0 0 (1) : 1
+0 0 0 5 5 0 0 0, 0 5 0 0 0 (1) : 1
+0 0 1 0 0 0 1 1, 0 0 1 0 0 (1) : 1
+0 0 2 0 0 0 2 2, 0 0 2 0 0 (1) : 1
+0 0 3 0 0 0 3 3, 0 0 3 0 0 (1) : 1
+0 0 4 0 0 0 4 4, 0 0 4 0 0 (1) : 1
+0 0 5 0 0 0 5 5, 0 0 5 0 0 (1) : 1
+1 1 0 0 0 1 0 0, 0 0 0 1 0 (1) : 1
+2 2 0 0 0 2 0 0, 0 0 0 2 0 (1) : 1
+3 3 0 0 0 3 0 0, 0 0 0 3 0 (1) : 1
+4 4 0 0 0 4 0 0, 0 0 0 4 0 (1) : 1
+5 5 0 0 0 5 0 0, 0 0 0 5 0 (1) : 1
+0 0 1 1 1 1 0 0, 0 0 0 0 1 (1) : 1
+0 0 2 2 2 2 0 0, 0 0 0 0 2 (1) : 1
+0 0 3 3 3 3 0 0, 0 0 0 0 3 (1) : 1
+0 0 4 4 4 4 0 0, 0 0 0 0 4 (1) : 1
+0 0 5 5 5 5 0 0, 0 0 0 0 5 (1) : 1
